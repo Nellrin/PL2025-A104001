@@ -33,6 +33,7 @@ Caso a `flag` se encontre num estado:
 * `True`, o programa irá somar o dígito lido do input no acumulador `x`.
 * `False`, irá guardar os próximos chars do input no acumulador `ns` para, nas próximas iterações, verificar se foram detetados algum dos seguintes elementos especiais: `on`, `off`, `=`, mais tarde apagando o acumulador caso a `flag` altere de estado.
 
+Finalmente, caso seja detetado a ocorrência de um char `=` no input, será colocado o valor atual do acumulador `x: int` na saída (usando um simples `print`).
 
 ### SUM
 
