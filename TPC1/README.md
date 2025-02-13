@@ -1,12 +1,10 @@
-resumo (lista de parágrafos descrevendo sucintamente em que consistiu o trabalho), lista de resultados (lista com apontadores para os ficheiros resultantes);
-
 # ON/OFF SUM
 
 ### 2025/02/13
 
 **[A104001]**: Frederico Cunha Afonso  
 
-![Fred](Photo.png)  
+![Fred](../Photo.png)  
 
 ## Info
 Este trabalho consistiu em criar "`um programa que soma-se todas as sequências de dígitos que encontre num texto`", tendo comportamentos diferentes, dependendo dos elementos "especiais" presentes no input dado (uma descrição mais aprofundada encontra-se no documento referenciado nos "Anexos").
