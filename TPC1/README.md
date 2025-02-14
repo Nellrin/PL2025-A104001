@@ -1,4 +1,4 @@
-# ON/OFF SUM
+# Somador ON/OFF
 
 ### 2025/02/13
 
@@ -13,17 +13,15 @@ Foram feitas duas resoluções para este enunciado:
 
 * `someSum` que vai somando cada dígito individualmente
   * `"on12"` irá devolver `3`
-  * `"1234on900"` irá devolver `9`
+  * `"1234on900"` irá devolver `10`
 
 * `SUM` que interpreta os números lidos por inteiro
   * `"on12"` irá devolver `12`
-  * `"1234on900"` irá devolver `9`
+  * `"1234off900"` irá devolver `1234`
 
 
 ### someSum
-É de salientar que o programa é `case-insensitive` e que defini ambos programas com a intenção de **só começar a soma quando é interpretado um `ON` do input**, estando a `flag`, posteriormente mencionada, inicialmente com o estado `False`
-
-Primeiramente, o programa irá verificar se o input dado tem um tamanho inferior a 3 (não permitindo a presença de um `on`, esperado para o início da soma, e um dígito qualquer) e se não contém nenhuma substring `on` (caso não contenha, não será feita nenhum cálculo).
+É de salientar que o programa é `case-insensitive` e que defini ambos programas com a intenção de **começar a soma desde o início do programa, sem precisar que seja interpretado um `ON` do input inicialmente**, estando a `flag`, posteriormente mencionada, inicialmente com o estado `True`
 
 Após definir um booleano `flag: bool` um acumulador `x: int` e `ns: str`, o programa irá iterar pela string presente no input, passando cada char da string original para o acumulador `ns`. 
 Caso seja detetado um `on` ou `off` no acumulador `ns`, a `flag` mudará de estado (`"on" -> True` | `"off" -> False`). 
