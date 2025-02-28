@@ -4,7 +4,7 @@
 
 **[A104001]**: Frederico Cunha Afonso  
 
-![Fred](Photo.png)  
+![Fred](../Photo.png)  
 
 ## Info
 O `.csv` no qual este trabalho se baseia, segue o seguinte formato:
