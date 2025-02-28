@@ -22,7 +22,7 @@ Para responder apropriadamente, atribuí 1 função por cada query desejada (`ge
 ### getCompositores
 Inicialmente, criei uma Expressão Regular genérica, capaz de identificadr informações dos campos presentes para todas as entradas do `.csv`:
 
-* `\s[^;]*?(?:;\"\"\"|;\")[^;]+(?:\"\"\";|\";)[^;]*?;[^;]*?;[^;]*?;[^;]*?;.*`
+* **`\s[^;]*?`**`(?:;\"\"\"|;\")`**`[^;]+`**`(?:\"\"\";|\";)`**`[^;]*?`**`;`**`[^;]*?`**`;`**`[^;]*?`**`;`**`[^;]*?`**`;`**`.*`**
 
 Sendo a distribuição de `campos` por `áreas da Expressão Regular` a que se segue:
 
