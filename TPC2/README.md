@@ -1,8 +1,6 @@
-resumo (lista de parágrafos descrevendo sucintamente em que consistiu o trabalho), lista de resultados (lista com apontadores para os ficheiros resultantes);
-
 # Análise de um dataset de obras musicais
 
-### 2025/02/13
+### 2025/02/20
 
 **[A104001]**: Frederico Cunha Afonso  
 
