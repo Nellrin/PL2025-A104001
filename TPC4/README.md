@@ -15,5 +15,5 @@
 
 ## Anexos 
 - [`Enunciado`](Enunciado.pdf) - [Enunciado] 
-- [`Resolução`](TP4.py) - [Resolução] 
+- [`Resolução`](TPC4.py) - [Resolução] 
 ---

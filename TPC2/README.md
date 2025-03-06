@@ -105,5 +105,6 @@ Só foram feitos testes às primeiras 3 funções por conveniência e por ser re
 Os testes foram baseados num `.csv` providenciado pelos professores e devolveram resultados esperados para cada função definida.
 
 ## Anexos 
-- [`TP`](TP2.ipynb) - [Enunciado, Resoluções e Testes] 
+- [`TP`](TPC2.ipynb) - [Resoluções e Testes] 
+- [`Enunciado`](Enunciado.pdf) - [Enunciado] 
 ---

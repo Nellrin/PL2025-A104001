@@ -41,5 +41,6 @@ Este programa irá funcionar exatamente da mesma maneira que o anterior, usando 
 Após desenvolver ambas resoluções, foram passados todos os testes feitos e confirmei que cada função estava a funcionar corretamente perante o contexto dado a cada uma
 
 ## Anexos 
-- [`TP`](TP1.ipynb) - [Enunciado, Resoluções e Testes] 
+- [`TP`](TPC1.ipynb) - [Resoluções e Testes] 
+- [`Enunciado`](Enunciado.pdf) - [Enunciado] 
 ---

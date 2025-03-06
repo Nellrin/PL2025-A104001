@@ -13,6 +13,6 @@
 
 
 ## Anexos 
-- [`TP`](TP3.ipynb) - [Resoluções e Testes] 
+- [`TP`](TPC3.ipynb) - [Resolução e Testes] 
 - [`Enunciado`](Enunciado.pdf) - [Enunciado] 
 ---
