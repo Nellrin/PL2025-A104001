@@ -7,12 +7,38 @@
 ![Fred](../Photo.png)
 
 ## Info
+Neste trabalho, o objetivo é `criar um conversor que parta de um ficheiro **MarkDown** e crie um ficheiro alternativo em **HTML**`, tendo apenas em conta os seguintes elementos:
+
+1. Cabeçalhos
+2. Bolds
+3. Itálicos
+4. Listas Numeradas (e não Numeradas) 
+5. Links
+6. Imagens
+
+### Cabelalhos
+Aqui, só tive em consideração os cabeçalhos cujo início de linha tivesse apenas 3 ou menos cardinais (`#`).
+
+- Regular Expression
+```py
+    body = re.sub(r'###(.*)',r'<h3>\1</h3>',body)
+    body = re.sub(r'##(.*)',r'<h2>\1</h2>',body)
+    body = re.sub(r'#(.*)',r'<h1>\1</h1>',body)
+```
+
+
+
+
+
 
 
 ### Testes
+Como teste, foi utilizado o ficheiro `README.md` deste trabalho como ficheiro de input. Podemos assim encontrar na diretoria  `Testes` o ficheiro resultante.
+
+- [`Teste`](Testes/README.html) - [Testes] 
 
 
 ## Anexos 
-- [`TP`](TPC3.ipynb) - [Resolução e Testes] 
+- [`TP`](TPC3.ipynb) - [Resolução] 
 - [`Enunciado`](Enunciado.pdf) - [Enunciado] 
 ---

@@ -1,0 +1,52 @@
+<h1>Conversor de MarkDown para HTML</h1>
+
+### 2025/02/27
+
+<b>[A104001]</b>: Frederico Cunha Afonso  
+
+<img src="../Photo.png" alt="Fred"/>
+
+## Info
+Neste trabalho, o objetivo é `criar um conversor que parta de um ficheiro <b>MarkDown</b> e crie um ficheiro alternativo em <b>HTML</b>`, tendo apenas em conta os seguintes elementos:
+
+<ol>
+<li>s</li>
+<li>s</li>
+<li>s</li>
+<li> </li>
+<li>s</li>
+<li>s</li>
+</ol>
+
+### Cabelalhos
+Aqui, só tive em consideração os cabeçalhos cujo início de linha tivesse apenas 3 ou menos cardinais (`#`).
+
+<ol>
+<ul> Regular Expression</ul>
+</ol>
+```py
+    body = re.sub(r'###(.*)',r'<h3>\1</h3>',body)
+    body = re.sub(r'##(.*)',r'<h2>\1</h2>',body)
+    body = re.sub(r'#(.*)',r'<h1>\1</h1>',body)
+```
+
+
+
+
+
+
+
+### Testes
+Como teste, foi utilizado o ficheiro `README.md` deste trabalho como ficheiro de input. Podemos assim encontrar na diretoria  `Testes` o ficheiro resultante.
+
+<ol>
+<ul><a href="Testes/README.html">`Teste`</a> - [Testes] </ul>
+</ol>
+
+
+## Anexos 
+<ol>
+<ul><a href="TPC3.ipynb">`TP`</a> - [Resolução] </ul>
+<ul><a href="Enunciado.pdf">`Enunciado`</a> - [Enunciado] </ul>
+</ol>
+---
