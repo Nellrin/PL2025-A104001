@@ -16,15 +16,6 @@ Neste trabalho, o objetivo é `criar um conversor que parta de um ficheiro **Mar
 5. Links
 6. Imagens
 
-### Cabelalhos
-Aqui, só tive em consideração os cabeçalhos cujo início de linha tivesse apenas 3 ou menos cardinais (`#`).
-
-- Regular Expression
-```py
-    body = re.sub(r'###(.*)',r'<h3>\1</h3>',body)
-    body = re.sub(r'##(.*)',r'<h2>\1</h2>',body)
-    body = re.sub(r'#(.*)',r'<h1>\1</h1>',body)
-```
 
 
 
