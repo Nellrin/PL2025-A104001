@@ -27,22 +27,13 @@ Regex: `r'(?<!\*)\*(?!\*)(.*?)(?<!\*)\*(?!\*)'`
 #### Listas Numeradas
 A função `NumList` converte listas numeradas (e não numeradas) em listas em "bullet-point":
 
-| Markdown (Input)       | HTML (Output)           |
-|------------------------|-------------------------|
-| ```                    | ```html                 |
-| 1. Item 1              | <ol>                    |
-| 2. Item 2              |   <li>Item 1</li>       |
-| 3. Item 3              |   <li>Item 2</li>       |
-|                        |   <li>Item 3</li>       |
-|                        | </ol>                   |
-| ```                    | ```                     |
-| ```                    | ```html                 |
-| * Item A               | <ul>                    |
-| * Item B               |   <li>Item A</li>       |
-| * Item C               |   <li>Item B</li>       |
-|                        |   <li>Item C</li>       |
-|                        | </ul>                   |
-| ```                    | ```                     |
+# Comparação de Listas Markdown → HTML
+
+| Markdown (Input)        | HTML (Output)           |
+|-------------------------|-------------------------|
+| `1. Item 1` <br> `2. Item 2` <br> `3. Item 3` | `<ol>` <br> `<li>Item 1</li>` <br> `<li>Item 2</li>` <br> `<li>Item 3</li>` <br> `</ol>` |
+| `* Item A` <br> `* Item B` <br> `* Item C` | `<ul>` <br> `<li>Item A</li>` <br> `<li>Item B</li>` <br> `<li>Item C</li>` <br> `</ul>` |
+
 
 Regex: `r'(^(\d\..+\n?)+)'`
 
