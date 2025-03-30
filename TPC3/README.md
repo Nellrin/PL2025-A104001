@@ -29,7 +29,6 @@ A função `NumList` converte listas numeradas (e não numeradas) em listas em "
 |-------------------------|-------------------------|
 | `1. Item 1` <br> `2. Item 2` <br> `3. Item 3` | `<ol>` <br> `<li>Item 1</li>` <br> `<li>Item 2</li>` <br> `<li>Item 3</li>` <br> `</ol>` |
 | `* Item A` <br> `* Item B` <br> `* Item C` | `<ul>` <br> `<li>Item A</li>` <br> `<li>Item B</li>` <br> `<li>Item C</li>` <br> `</ul>` |
-
 <br>
 Regex: `r'(^(\d\..+\n?)+)'`
 
