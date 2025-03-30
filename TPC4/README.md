@@ -22,9 +22,9 @@ Implementar um **analisador léxico** para uma linguagem de query.
 
 | **Query inicial** | **Tokens** |
 |----------------------|--------------------|
-| `SELECT ?nome ?desc WHERE {` | `('SELECT', 'SELECT')` <br> `('VAR', '?nome')` <br> `('VAR', '?desc')` <br> `('WHERE', 'WHERE')` <br> `('L_PAR', '{')` |
+| `SELECT ?nome ?desc WHERE {` | `('SELECT', 'SELECT')` <br> `('VAR', '?nome')` <br> `('VAR', '?desc')` <br> `('WHERE', 'where')` <br> `('L_PAR', '{')` |
 | `?s a dbo:MusicalArtist.` | `('VAR', '?s')` <br> `('A', 'a')` <br> `('CPF', 'dbo')` <br> `('CPFVAR', 'MusicalArtist')` <br> `('EOL', '.')` |
-| `?s foaf:name "Chuck Berry"@en .` | `('VAR', '?s')` <br> `('CPF', 'foaf')` <br> `('CPFVAR', 'name')` <br> `('STRING', '"Chuck Berry"')` <br> `('AT', '@')` <br> `('ENC', 'en')` <br> `('EOL', '.')` |
+| `?s foaf:name "Chuck Berry"@en .` | `('VAR', '?s')` <br> `('CPF', 'foaf')` <br> `('TP', ':')` <br> `('CPFVAR', 'name')` <br> `('STRING', '"Chuck Berry"')` <br> `('AT', '@')` <br> `('ENC', 'en')` <br> `('EOL', '.')` |
 | `?w dbo:artist ?s.` | `('VAR', '?w')` <br> `('CPF', 'dbo')` <br> `('CPFVAR', 'artist')` <br> `('VAR', '?s')` <br> `('EOL', '.')` |
 | `?w foaf:name ?nome.` | `('VAR', '?w')` <br> `('CPF', 'foaf')` <br> `('CPFVAR', 'name')` <br> `('VAR', '?nome')` <br> `('EOL', '.')` |
 | `?w dbo:abstract ?desc` | `('VAR', '?w')` <br> `('CPF', 'dbo')` <br> `('CPFVAR', 'abstract')` <br> `('VAR', '?desc')` |
