@@ -9,7 +9,7 @@
 ## Info
 Aqui vamos criar um conversor que parta de um ficheiro **MarkDown** e crie um ficheiro alternativo em **HTML**, tendo apenas em conta os seguintes elementos:
 
-#### Cabeçalhos<br> 
+#### Cabeçalhos
 A função `Header` transforma `# Título` em `<h1>Título</h1>`<br> 
 Usa regex (`r'^(#+)\s(.+)'`) para capturar `#`, `##`, `###`, ..., **N**`#`'s e, após passar a uma função secundária, irá devolver uma tag `<hN>` com **N** igual ao número de `#` capturados.
 
