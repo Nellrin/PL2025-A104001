@@ -7,18 +7,21 @@
 ![Fred](../Photo.png)
 
 ## Info
-Neste trabalho, o objetivo é `criar um conversor que parta de um ficheiro **MarkDown** e crie um ficheiro alternativo em **HTML**`, tendo apenas em conta os seguintes elementos:
+Aqui vamos criar um conversor que parta de um ficheiro **MarkDown** e crie um ficheiro alternativo em **HTML**`, tendo apenas em conta os seguintes elementos:
 
 ### Cabeçalhos
 A função `Header` transforma `# Título` em `<h1>Título</h1>`
-Usa regex para capturar `#`, `##`, `###`, ..., **N**`#`'s e devolver uma tag `<hN>` com **N** igual ao número de `#` capturados.
+
+Usa regex (`r'^(#+)\s(.+)'`) para capturar `#`, `##`, `###`, ..., **N**`#`'s e, após passar a uma função secundária, irá devolver uma tag `<hN>` com **N** igual ao número de `#` capturados.
 
 ### Negrito
 A função `Bold` troca `**texto**` por `<b>texto</b>`
+
 Regex: `r'\*\*(.*?)\*\*'`.
 
 ### Itálico
-A função `Italic` troca `*texto*` por `<i>texto</i>`.  
+A função `Italic` troca `*texto*` por `<i>texto</i>`
+
 Regex: `r'(?<!\*)\*(?!\*)(.*?)(?<!\*)\*(?!\*)'`
 
 ### Listas Numeradas
@@ -44,16 +47,18 @@ A função `NumList` converte listas numeradas (e não numeradas) em listas em "
 Regex: `r'(^(\d\..+\n?)+)'`
 
 ### Links
-A função Link transforma `[texto](URL)` em `<a href="URL">texto</a>`.
+A função Link transforma `[texto](URL)` em `<a href="URL">texto</a>`
+
 Regex: `r'[^!]\[(.*?)\]\((.*?)\)'`
 
 ### Imagens
-A função Image transforma `![alt](URL)` em `<img src="URL" alt="alt"/>`.
+A função Image transforma `![alt](URL)` em `<img src="URL" alt="alt"/>`
+
 Regex: `r'!\[(.*?)\]\((.*?)\)'`
 
 
 ### Função Principal
-`MD2HTML` aplica todas as transformações e cria um ficheiro resultante em `.html`.
+`MD2HTML` aplica todas as transformações e cria um ficheiro resultante em `.html`
 
 
 ### Testes
