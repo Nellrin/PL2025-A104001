@@ -32,7 +32,7 @@ Implementar um **analisador léxico** para uma linguagem de query.
 
 
 ### Testes
-- [`Tests`](Tests/output.txt) - [Testes] 
+- [`Tests`](Testes/output.txt) - [Testes] 
 
 
 ## Anexos 
