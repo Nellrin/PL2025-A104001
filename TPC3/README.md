@@ -7,57 +7,57 @@
 ![Fred](../Photo.png)
 
 ## Info
-Aqui vamos criar um conversor que parta de um ficheiro **MarkDown** e crie um ficheiro alternativo em **HTML**`, tendo apenas em conta os seguintes elementos:
+Aqui vamos criar um conversor que parta de um ficheiro **MarkDown** e crie um ficheiro alternativo em **HTML**, tendo apenas em conta os seguintes elementos:
 
-### Cabeçalhos
+#### Cabeçalhos
 A função `Header` transforma `# Título` em `<h1>Título</h1>`
 
 Usa regex (`r'^(#+)\s(.+)'`) para capturar `#`, `##`, `###`, ..., **N**`#`'s e, após passar a uma função secundária, irá devolver uma tag `<hN>` com **N** igual ao número de `#` capturados.
 
-### Negrito
+#### Negrito
 A função `Bold` troca `**texto**` por `<b>texto</b>`
 
 Regex: `r'\*\*(.*?)\*\*'`.
 
-### Itálico
+#### Itálico
 A função `Italic` troca `*texto*` por `<i>texto</i>`
 
 Regex: `r'(?<!\*)\*(?!\*)(.*?)(?<!\*)\*(?!\*)'`
 
-### Listas Numeradas
+#### Listas Numeradas
 A função `NumList` converte listas numeradas (e não numeradas) em listas em "bullet-point":
-
-# Comparação de Listas Markdown → HTML
 
 | Markdown (Input)       | HTML (Output)          |
 |------------------------|------------------------|
-| 1. Item 1             | `<ol>`                  |
-| 2. Item 2             | `  <li>Item 1</li>`     |
-| 3. Item 3             | `  <li>Item 2</li>`     |
-|                        | `  <li>Item 3</li>`     |
-|                        | `</ol>`                 |
-|                        |                        |
-| * Item A              | `<ul>`                  |
-| * Item B              | `  <li>Item A</li>`     |
-| * Item C              | `  <li>Item B</li>`     |
-|                        | `  <li>Item C</li>`     |
-|                        | `</ul>`                 |
-
+| ```                   | ```html                 |
+| 1. Item 1             | <ol>                    |
+| 2. Item 2             |   <li>Item 1</li>       |
+| 3. Item 3             |   <li>Item 2</li>       |
+|                        |   <li>Item 3</li>       |
+|                        | </ol>                   |
+| ```                   | ```                     |
+| ```                   | ```html                 |
+| * Item A              | <ul>                    |
+| * Item B              |   <li>Item A</li>       |
+| * Item C              |   <li>Item B</li>       |
+|                        |   <li>Item C</li>       |
+|                        | </ul>                   |
+| ```                   | ```                     |
 
 Regex: `r'(^(\d\..+\n?)+)'`
 
-### Links
+#### Links
 A função Link transforma `[texto](URL)` em `<a href="URL">texto</a>`
 
 Regex: `r'[^!]\[(.*?)\]\((.*?)\)'`
 
-### Imagens
+#### Imagens
 A função Image transforma `![alt](URL)` em `<img src="URL" alt="alt"/>`
 
 Regex: `r'!\[(.*?)\]\((.*?)\)'`
 
 
-### Função Principal
+#### Função Principal
 `MD2HTML` aplica todas as transformações e cria um ficheiro resultante em `.html`
 
 
