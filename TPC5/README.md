@@ -27,7 +27,7 @@ Implementação de uma **máquina de vending** interativa, permitindo listar pro
 | `MOEDA 1e, 20c, 5c, 5c .`   | `Saldo = 1e30c` |
 | `SELECIONAR A23`            | `Pode retirar "água 0.5L"` |
 | `SELECIONAR A23` (saldo insuf.) | `Saldo insuficiente` <br> `Saldo = 60c; Pedido = 70c` |
-| `SAIR`                      | `Pode retirar o troco: 1x 50c, 1x 20c, 2x 2c` <br> `Até à próxima!` |
+| `SAIR`                      | Manipulação de Dados efetuada salva |
 
 
 ### Testes
