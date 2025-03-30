@@ -7,58 +7,33 @@
 <img src="../Photo.png" alt="Fred"/>
 
 ## Info
-Aqui vamos criar um conversor que parta de um ficheiro <b>MarkDown</b> e crie um ficheiro alternativo em <b>HTML</b>`, tendo apenas em conta os seguintes elementos:
+Neste trabalho, o objetivo é `criar um conversor que parta de um ficheiro <b>MarkDown</b> e crie um ficheiro alternativo em <b>HTML</b>`, tendo apenas em conta os seguintes elementos:
 
-### Cabeçalhos
-A função `Header` transforma `# Título` em `<h1>Título</h1>`
+<ol>
+<li>s</li>
+<li>s</li>
+<li>s</li>
+<li> </li>
+<li>s</li>
+<li>s</li>
+</ol>
 
-Usa regex (`r'^(#+)\s(.+)'`) para capturar `#`, `##`, `###`, ..., <b>N</b>`#`'s e, após passar a uma função secundária, irá devolver uma tag `<hN>` com <b>N</b> igual ao número de `#` capturados.
+### Cabelalhos
+Aqui, só tive em consideração os cabeçalhos cujo início de linha tivesse apenas 3 ou menos cardinais (`#`).
 
-### Negrito
-A função `Bold` troca `<b>texto</b>` por `<b>texto</b>`
-
-Regex: `r'\<i>\</i>(.<i>?)\</i>\*'`.
-
-### Itálico
-A função `Italic` troca `<i>texto</i>` por `<i>texto</i>`
-
-Regex: `r'(?<!\<i>)\</i>(?!\<i>)(.</i>?)(?<!\<i>)\</i>(?!\*)'`
-
-### Listas Numeradas
-A função `NumList` converte listas numeradas (e não numeradas) em listas em "bullet-point":
-
-# Comparação de Listas Markdown → HTML
-
-| Markdown (Input)       | HTML (Output)          |
-|------------------------|------------------------|
-| 1. Item 1             | `<ol>`                  |
-| 2. Item 2             | `  <li>Item 1</li>`     |
-| 3. Item 3             | `  <li>Item 2</li>`     |
-|                        | `  <li>Item 3</li>`     |
-|                        | `</ol>`                 |
-|                        |                        |
-| * Item A              | `<ul>`                  |
-| * Item B              | `  <li>Item A</li>`     |
-| * Item C              | `  <li>Item B</li>`     |
-|                        | `  <li>Item C</li>`     |
-|                        | `</ul>`                 |
+<ol>
+<ul> Regular Expression</ul>
+</ol>
+```py
+    body = re.sub(r'###(.*)',r'<h3>\1</h3>',body)
+    body = re.sub(r'##(.*)',r'<h2>\1</h2>',body)
+    body = re.sub(r'#(.*)',r'<h1>\1</h1>',body)
+```
 
 
-Regex: `r'(^(\d\..+\n?)+)'`
-
-### Links
-A função Link transforma <a href="URL">texto</a>` em `<a href="URL">texto</a>`
-
-Regex: `r'[^!]\[(.<i>?)\]\((.</i>?)\)'`
-
-### Imagens
-A função Image transforma `<img src="URL" alt="alt"/>` em `<img src="URL" alt="alt"/>`
-
-Regex: `r'!\[(.<i>?)\]\((.</i>?)\)'`
 
 
-### Função Principal
-`MD2HTML` aplica todas as transformações e cria um ficheiro resultante em `.html`
+
 
 
 ### Testes

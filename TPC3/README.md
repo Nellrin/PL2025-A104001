@@ -37,6 +37,7 @@ A função `NumList` converte listas numeradas (e não numeradas) em listas em "
 
 Regex: `r'(^(\d\..+\n?)+)'`
 
+
 #### Links
 A função Link transforma `[texto](URL)` em `<a href="URL">texto</a>`
 
