@@ -10,7 +10,6 @@
 
 Implementação de uma **máquina de vending** interativa, permitindo listar produtos, inserir moedas, selecionar itens e receber troco. O estoque é armazenado em um **arquivo JSON** e atualizado automaticamente.
 
-## 📌 Funcionalidades  
 
 - **Listar produtos disponíveis** com código, nome, quantidade e preço.  
 - **Inserir moedas** e acompanhar o saldo acumulado.  
@@ -18,8 +17,6 @@ Implementação de uma **máquina de vending** interativa, permitindo listar pro
 - **Receber troco** corretamente ao sair do sistema.  
 - **Atualização automática do estoque** ao iniciar e encerrar o programa.  
 - **Adicionar produtos ao estoque** (novos ou já existentes).  
-
-## 📜 Exemplo de Interação  
 
 | **Comando**                 | **Resposta da Máquina** |
 |-----------------------------|------------------------|

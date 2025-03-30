@@ -7,7 +7,6 @@
 ![Fred](../Photo.png)
 
 ## Info
-### Analisador Léxico para Query Language
 
 Implementar um **analisador léxico** para uma linguagem de query. 
 
@@ -17,8 +16,6 @@ Implementar um **analisador léxico** para uma linguagem de query.
 - Reconhece **variáveis** (`?var`), **strings** (`"texto"`), e **prefixos** (`foaf:name`).
 - Processa **símbolos especiais** (`{`, `}`, `.`) e números (`1000`).
 - Gera uma lista de tokens organizados por linha da query.
-
-## 📜 Exemplo de Entrada e Saída
 
 | **Query inicial** | **Tokens** |
 |----------------------|--------------------|
