@@ -9,7 +9,7 @@
 ## Info
 Aqui vamos criar um conversor que parta de um ficheiro **MarkDown** e crie um ficheiro alternativo em **HTML**, tendo apenas em conta os seguintes elementos:
 
-#### Cabeçalhos
+#### Cabeçalhos<br> 
 A função `Header` transforma `# Título` em `<h1>Título</h1>`<br> 
 Usa regex (`r'^(#+)\s(.+)'`) para capturar `#`, `##`, `###`, ..., **N**`#`'s e, após passar a uma função secundária, irá devolver uma tag `<hN>` com **N** igual ao número de `#` capturados.
 
@@ -23,8 +23,8 @@ Regex: `r'(?<!\*)\*(?!\*)(.*?)(?<!\*)\*(?!\*)'`
 
 #### Listas Numeradas
 A função `NumList` converte listas numeradas (e não numeradas) em listas em "bullet-point":
+<br> 
 
-# Comparação de Listas Markdown → HTML<br> 
 | Markdown (Input)        | HTML (Output)           |
 |-------------------------|-------------------------|
 | `1. Item 1` <br> `2. Item 2` <br> `3. Item 3` | `<ol>` <br> `<li>Item 1</li>` <br> `<li>Item 2</li>` <br> `<li>Item 3</li>` <br> `</ol>` |
@@ -32,16 +32,16 @@ A função `NumList` converte listas numeradas (e não numeradas) em listas em "
 <br> Regex: `r'(^(\d\..+\n?)+)'`
 
 
-#### Links<br> 
+#### Links
 A função Link transforma `[texto](URL)` em `<a href="URL">texto</a>`<br> 
 Regex: `r'[^!]\[(.*?)\]\((.*?)\)'`
 
-#### Imagens<br> 
+#### Imagens
 A função Image transforma `![alt](URL)` em `<img src="URL" alt="alt"/>`<br> 
 Regex: `r'!\[(.*?)\]\((.*?)\)'`
 
 
-#### Função Principal<br> 
+#### Função Principal
 `MD2HTML` aplica todas as transformações e cria um ficheiro resultante em `.html`
 
 ### Testes
