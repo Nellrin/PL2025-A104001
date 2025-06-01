@@ -15,5 +15,5 @@ Após desenvolver um parser LL(1) recursivo descendente, fiz um parser que (usan
 
 ## Anexos 
 - [`Enunciado`](Enunciado.md) - [Enunciado] 
-- [`Resolução`](TPC6.py) - [Resolução] 
+- [`Resolução`](src) - [Resolução] 
 ---
